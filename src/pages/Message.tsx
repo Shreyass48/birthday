@@ -10,8 +10,9 @@ const BIRTHDAY_MESSAGE = `Happy Birthday, Hrutuja! 🎂✨
 
 Yaar, aaj tera birthday hai aur main soch raha tha ki kaise sab kuch shuru hua...
 
-Maine tujhe woh 2 vajun 22 min play ke liye message kiya tha, aur phir bas... we started talking. Honestly, it all feels like God's plan, you know? ❤️
-Phir shuru hui hamari normal conversations, Instagram posts share karna, aur phir aya hamara first call tera Goa trip planning ke liye. Maine pehli baar teri awaaz suni thi... aur yaar, us ek din tune wo voice note bheja tha "bade ache lagte hai" wala aye haye, kya awaaz hai yaar apki! ❤️ Abhi bhi kaano mein goonjti hai.
+Maine tujhe woh 2 vajun 22 min play ke liye message kiya tha, aur phir bas... we started talking. Honestly, it all feels like God's plan ❤️
+
+Phir shuru hui hamari normal conversations, Instagram posts share karna, aur phir aya first call tera Goa trip planning ke liye. Maine pehli baar teri awaaz suni thi... aur yaar fan ho gaya, aur uss din tune wo voice note bheja tha "bade ache lagte hai" wala aye haye, kya awaaz hai yaar apki! ❤️ Abhi bhi kaano mein goonjti hai.
 Then we finally met for the first time... our bawling session jisme aapne muze hara diyaa, woh coffee date, maja aaya tha yaar, ekdum! ☕
 
 Aur phir aapne mujhe Goa trip mein invite kiya... yaar, kya moments banaye humne! Woh Vagator wala sunset, South Goa ki bike ride tere saath, it was the best! ❤️ Hamari dinner date, raat mein beach pe ki hui bakchodi, aur haa... woh palak paneer toh kabhi nahi bhul sakta yaar! 😄 Aur woh swimming session bhi... honestly, it was my best Goa trip ever, because of you. Thank you so much for inviting me. 💕
@@ -24,10 +25,11 @@ Aur woh din jab aap sidha Thane aayi... yaar, woh 2 din kabhi nahi bhulunga! Coo
 End mein yahi kahunga Aap bahut achi ho aur bahut zyada pyari ho!❤️✨
 
 Thank you for coming into my life and making it the best. Thank you for filling it with so much happiness, laughter, and beautiful memories.
+
 Happy Birthday, dear! 🎉🎂
 
 Enjoy your day to the fullest, keep smiling that beautiful smile of yours, and may God bless you with everything you deserve.
-Here's to many more memories together! 🥂💕`
+Here's to many more memories together! 🥂💕`;
 
 // ✨ CUSTOMIZE: Change the signature
 const SIGNATURE = "With all my love";
@@ -41,15 +43,15 @@ const Message = () => {
   useEffect(() => {
     // Play audio only once when component mounts
     if (!hasPlayedRef.current && !audioRef.current) {
-      const audio = new Audio('/audio/dekha-hi-nahi.mp3');
+      const audio = new Audio("/audio/dekha-hi-nahi.mp3");
       audio.volume = 0.7; // Set volume to 70%
-      
+
       // Play the audio
       audio.play().catch((error) => {
         // Handle autoplay restrictions (some browsers require user interaction)
-        console.log('Audio autoplay prevented:', error);
+        console.log("Audio autoplay prevented:", error);
       });
-      
+
       audioRef.current = audio;
       hasPlayedRef.current = true;
 
@@ -106,7 +108,8 @@ const Message = () => {
                   {/* Envelope body */}
                   <div className="absolute inset-0 bg-gradient-to-br from-rose-200 to-rose-300 rounded-lg shadow-romantic">
                     {/* Envelope flap */}
-                    <div className="absolute top-0 left-0 right-0 h-1/2 bg-gradient-to-b from-rose-100 to-rose-200 rounded-t-lg"
+                    <div
+                      className="absolute top-0 left-0 right-0 h-1/2 bg-gradient-to-b from-rose-100 to-rose-200 rounded-t-lg"
                       style={{
                         clipPath: "polygon(0 0, 100% 0, 50% 100%)",
                       }}

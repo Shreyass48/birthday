@@ -6,7 +6,7 @@ import RomanticButton from "@/components/RomanticButton";
 import PageTransition from "@/components/PageTransition";
 
 // ✨ CUSTOMIZE: Change this to your loved one's name
-const BIRTHDAY_NAME = "My Love";
+const BIRTHDAY_NAME = "Hrutuja!";
 
 const Index = () => {
   const navigate = useNavigate();
@@ -16,7 +16,7 @@ const Index = () => {
       <div className="relative min-h-screen bg-dreamy overflow-hidden flex flex-col items-center justify-center px-safe pb-safe pt-safe">
         {/* Floating hearts background */}
         <FloatingHearts count={8} />
-        
+
         {/* Sparkles overlay */}
         <Sparkles count={15} />
 
@@ -61,7 +61,7 @@ const Index = () => {
             transition={{ delay: 0.8, duration: 0.8 }}
             className="font-elegant text-base md:text-lg text-muted-foreground mb-10 leading-relaxed max-w-sm mx-auto"
           >
-            Today is all about celebrating the most wonderful person in my life. 
+            Today is all about celebrating the most wonderful person in my life.
             I have something special prepared just for you...
           </motion.p>
 
@@ -90,9 +90,18 @@ const Index = () => {
           transition={{ delay: 1.2, duration: 1 }}
           className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-3 text-2xl"
         >
-          <span className="animate-float" style={{ animationDelay: "0s" }}>🌸</span>
-          <span className="animate-float-slow" style={{ animationDelay: "0.5s" }}>💕</span>
-          <span className="animate-float" style={{ animationDelay: "1s" }}>🌸</span>
+          <span className="animate-float" style={{ animationDelay: "0s" }}>
+            🌸
+          </span>
+          <span
+            className="animate-float-slow"
+            style={{ animationDelay: "0.5s" }}
+          >
+            💕
+          </span>
+          <span className="animate-float" style={{ animationDelay: "1s" }}>
+            🌸
+          </span>
         </motion.div>
       </div>
     </PageTransition>
